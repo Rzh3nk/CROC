@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Day_average>
+    <Day>
+        <Date>2020-10-12</Date>
+        <Average>6249.5</Average>
+    </Day>
+    <Day>
+        <Date>2021-10-12</Date>
+        <Average>5776.0</Average>
+    </Day>
+    <Day>
+        <Date>2022-12-12</Date>
+        <Average>88.33333333333333</Average>
+    </Day>
+    <Day>
+        <Date>2023-12-12</Date>
+        <Average>1623.0</Average>
+    </Day>
+</Day_average>
