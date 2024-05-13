@@ -34,7 +34,8 @@ public class BlackListFilterImpl implements BlackListFilter{
 
             for(String str : comments){
                 boolean flag = true;
-                HashSet<String> sts = new HashSet<String>(Arrays.asList(str. split("[\\p{P} \\t\\n\\r]"))); //записываем в HashSet только слова, без лишних знаков.
+                HashSet<String> sts = new HashSet<String>(Arrays.asList(str. split("[\\p{P} \\t\\n\\r]")));
+                //записываем в HashSet только слова, без лишних знаков.
 
                 Iterator<String> iter = sts.iterator();
                 while (iter.hasNext()){ //смотрим в блэклист
