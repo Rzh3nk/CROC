@@ -30,13 +30,10 @@ public class BlackListFilterImpl implements BlackListFilter{
     public void filterComments(List<String> comments, Set<String> blackList)  {
         try {
             PrintWriter output = new PrintWriter(outputFile);
-
-
             for(String str : comments){
                 boolean flag = true;
                 HashSet<String> sts = new HashSet<String>(Arrays.asList(str. split("[\\p{P} \\t\\n\\r]")));
                 //записываем в HashSet только слова, без лишних знаков.
-
                 Iterator<String> iter = sts.iterator();
                 while (iter.hasNext()){ //смотрим в блэклист
                     if (blackList.contains(iter.next().toLowerCase()) ){
@@ -53,7 +50,5 @@ public class BlackListFilterImpl implements BlackListFilter{
         catch (FileNotFoundException e){
             System.out.println("Выходного файла нет");
         }
-
-
     }
 }
