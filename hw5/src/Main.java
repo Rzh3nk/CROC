@@ -69,7 +69,6 @@ public class Main {
             });
         }
         executors.shutdown(); //закрываем потоки
-
         for (int i = 0; i < a.length; i++) {
             try {
                 result += preResult[i].get(); // складываем подреузьтаты
@@ -77,7 +76,6 @@ public class Main {
                 System.out.println("Exception: " + e);
             }
         }
-
         return result;
     }
 
